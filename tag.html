@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>アルこ〜る</title>
+    <link rel="stylesheet" type="text/css" href="./css/tag.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--メニューバーのやつ-->
+    <link rel="stylesheet" type="text/css" href="./css/menubar.css">
+    <script>
+            $(function(){
+                $('#nav li').hover(function(){
+                    $("ul:not(:animated)", this).slideDown();
+                }, function(){
+                    $("ul.child",this).slideUp();
+                });
+            });
+    </script>
+    <!--waveのやつ-->
+    <link rel="stylesheet" type="text/css" href="./css/wave.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+        <header class="cb-header"><ul id="nav">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="./tag.html">通話</a></li>
+                <li><a href="#">お酒のカテゴリー  </a>
+                <ul class=child>
+                  <!---
+                  <li><a href="./htmls/2499/17583/main.html">炭酸水</a></li>
+                  <li><a href="./htmls/2499/1371/main.html">ワイン</a></li>
+                  <li><a href="./htmls/2499/1348/main.html">焼酎</a></li>
+                  <li><a href="./htmls/2499/1359/main.html">日本酒</a></li>
+                  <li><a href="./htmls/2499/15152/main.html">ビール、発泡酒</a></li>
+                  <li><a href="./htmls/2499/18161/main.html">ハイボール、チューハイ</a></li>
+                  <li><a href="./htmls/2499/18176/main.html">カクテル</a></li>
+                  <li><a href="./htmls/2499/4746/main.html">洋酒</a></li>
+                  <li><a href="./htmls/2499/41170/main.html">リキュール</a></li>
+                  <li><a href="./htmls/2499/18377/main.html">梅酒</a></li>
+                  <li><a href="./htmls/2499/18383/main.html">中国酒、紹興酒</a></li>
+                  <li><a href="./htmls/2499/18389/main.html">韓国酒、マッコリ</a></li>-->
+                  
+                  <span><a href="./htmls/2499/17583/main.html">炭酸水</a></span>
+                  <span><a href="./htmls/2499/1371/main.html">ワイン</a></span>
+                  <span><a href="./htmls/2499/1348/main.html">焼酎</a></span>
+                  <span><a href="./htmls/2499/1359/main.html">日本酒</a></span>
+                  
+                  <div>
+                  <span><a href="./htmls/2499/15152/main.html">ビール、発泡酒</a></span>
+                  <span><a href="./htmls/2499/18161/main.html">ハイボール、チューハイ</a></span>
+                  <span><a href="./htmls/2499/18176/main.html">カクテル</a></span>
+                  <span><a href="./htmls/2499/4746/main.html">洋酒</a></span>
+                  </div>
+                  <div>
+                  <span><a href="./htmls/2499/41170/main.html">リキュール</a></span>
+                  <span><a href="./htmls/2499/18377/main.html">梅酒</a></span>
+                  <span><a href="./htmls/2499/18383/main.html">中国酒、紹興酒</a></span>
+                  <span><a href="./htmls/2499/18389/main.html">韓国酒、マッコリ</a></span>
+                  </div>
+                </ul>
+                <li>   
+                <!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+                <a href="https://developer.yahoo.co.jp/about">
+                <img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a>
+                <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+                </li>
+              </ul></header>
+   
+
+<div class=chose>今飲んでいるお酒を選んでください。</div>
+
+<div id="main">
+     <ul class="image_list">
+         <ul class="image_list">
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/1.png" alt="カクテル" id="1"><span class="up">カクテル</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/2.png" alt="チューハイ" id="2"><span class="up">チューハイ</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/3.png" alt="ビール" id="3"><span class="up">ビール</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/4.png" alt="リキュール" id="4"><span class="up">リキュール</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+    </ul>
+         <ul class="image_list">
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/5.png" alt="ワイン" id="5"><span class="up">ワイン</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/6.png" alt="梅酒" id="6"><span class="up">梅酒</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/7.png" alt="韓国酒、マッコリ" id="7"><span class="up">韓国酒、マッコリ</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/8.png" alt="焼酎" id="8"><span class="up">焼酎</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+    </ul>
+         <ul class="image_list">
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/9.png" alt="炭酸水" id="9"><span class="up">炭酸水</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/10.png" alt="中国酒、紹興酒" id="10"><span class="up">中国酒、紹興酒</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/11.png" alt="日本酒" id="11"><span class="up">日本酒</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <li>
+            <div class="image_box">
+            <img class="thumbnail" src="./images/12.png" alt="洋酒" id="12"><span class="up">洋酒</span>
+            <input class="disabled_checkbox" type="checkbox" checked />
+        </div>
+        </li>
+        <div class="next"><a class="next_btn shnext" href="javascript:window.location.href = 'https://hacku.project/multi.html?' +id " >仲間を探す</a>
+    </ul>
+</div>
+<!--
+<div id="canvas-wrap">
+    <canvas id="sineCanvas" width="100%" height="auto"></canvas>
+</div>
+<script type="text/javascript" src="./js/wave.js"></script>
+-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--<script src="./js/tag.js"></script>-->
+
+<script>
+
+    var id = checkindex();
+
+    function checkindex() {
+      // チェックボックスのクリックを無効化します。
+      $('.image_box .disabled_checkbox').click(function() {
+        return false;
+      });
+
+      // 画像がクリックされた時の処理です。
+      $('img.thumbnail').on('click', function() {
+        //var id;
+        if (!$(this).is('.checked')) {
+          // チェックが入っていない画像をクリックした場合、チェックを入れます。
+          $(this).removeClass('unchecked');
+          $('.checked').each(function(){
+            $(this).removeClass('checked');
+            $(this).addClass('unchecked');
+          });
+          $(this).addClass('checked');
+          alert($(this).attr("id"));
+          $('.checked').each(function(){
+            alert($(this).attr("id"));
+            id = $(this).attr("id");
+            console.log("koko" + id)
+          });
+        } else {
+          // チェックが入っている画像をクリックした場合、チェックを外します。
+          $(this).removeClass('checked');
+          $(this).addClass('unchecked');
+        }
+        console.log("koko" + id)
+        return id;
+      });
+    };
+</script>
+</body>
+</html>

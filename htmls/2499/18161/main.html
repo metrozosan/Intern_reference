@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background images - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../../../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../../../examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #000;
+		margin:0;
+		padding:0;
+    position: center;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+  /**/
+#section0{
+background-image: url(../../.././images/./xml/2499/ハイボール、チューハイ/ハイボール/1.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section0 h1{
+color: #000;
+position: relative;
+}/**/
+#section1{
+background-image: url(../../.././images/./xml/2499/ハイボール、チューハイ/サワー、缶チューハイ/2.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section1 h1{
+color: #000;
+position: relative;
+}/**/
+#section2{
+background-image: url(../../.././images/./xml/2499/ハイボール、チューハイ/ノンアルコール/3.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section2 h1{
+color: #000;
+position: relative;
+}/*CSS_DATAS_MANY1*/
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+		    h1.btn{
+					background-color:  rgba(255,0,0,0.5);
+
+				}
+
+
+	</style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    var num = 2;
+    var i = 0;
+    $(function(){
+      setInterval(function(){
+        i = num % 20;
+        num++;
+        if(i==0){i=20}
+        /**/
+$('#section0').css('background-image','url(' + '../../.././images/./xml/2499/ハイボール、チューハイ/ハイボール/' + i + '.png)');
+/**/
+$('#section1').css('background-image','url(' + '../../.././images/./xml/2499/ハイボール、チューハイ/サワー、缶チューハイ/' + i + '.png)');
+/**/
+$('#section2').css('background-image','url(' + '../../.././images/./xml/2499/ハイボール、チューハイ/ノンアルコール/' + i + '.png)');
+/*CSS_DATAS_MANY2*/
+      },3500);
+    });
+  </script>
+</head>
+<body>
+
+
+
+<div id="fullpage">
+  <!----><div class="section " id="section0"><a href="./18162/main.html"><h1 class="btn">ハイボール</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section1"><a href="./18166/main.html"><h1 class="btn">サワー、缶チューハイ</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section2"><a href="./18175/main.html"><h1 class="btn">ノンアルコール</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!--CSS_DATAS_MANY3-->
+</div>
+
+
+<script type="text/javascript" src="../../../dist/fullpage.js"></script>
+<script type="text/javascript" src="../../../examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: [/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/*CSS_DATAS_MANY6],*/],
+        anchors: [/**/'firstPage',/**/'secondPage',/**/'3rdPage',/*CSS_DATAS_MANY5*/],
+        navigation:true,
+        navigationTooltips: [/**/'ハイボール',/**/'サワー、缶チューハイ',/**/'ノンアルコール',/*CSS_DATAS_MANY4*/],
+        showActiveTooltip: true,
+        menu: '#menu'
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background images - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../../../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../../../examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #000;
+		margin:0;
+		padding:0;
+    position: center;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+  /**/
+#section0{
+background-image: url(../../.././images/./xml/2499/ワイン/ワインセット/1.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section0 h1{
+color: #000;
+position: relative;
+}/**/
+#section1{
+background-image: url(../../.././images/./xml/2499/ワイン/赤ワイン/2.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section1 h1{
+color: #000;
+position: relative;
+}/**/
+#section2{
+background-image: url(../../.././images/./xml/2499/ワイン/白ワイン/3.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section2 h1{
+color: #000;
+position: relative;
+}/**/
+#section3{
+background-image: url(../../.././images/./xml/2499/ワイン/ロゼワイン/4.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section3 h1{
+color: #000;
+position: relative;
+}/**/
+#section4{
+background-image: url(../../.././images/./xml/2499/ワイン/シャンパン、スパークリング/5.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section4 h1{
+color: #000;
+position: relative;
+}/**/
+#section5{
+background-image: url(../../.././images/./xml/2499/ワイン/フレーバードワイン/6.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section5 h1{
+color: #000;
+position: relative;
+}/**/
+#section6{
+background-image: url(../../.././images/./xml/2499/ワイン/シェリー、ポート、酒精強化ワイン/7.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section6 h1{
+color: #000;
+position: relative;
+}/**/
+#section7{
+background-image: url(../../.././images/./xml/2499/ワイン/その他ワイン/8.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section7 h1{
+color: #000;
+position: relative;
+}/**/
+#section8{
+background-image: url(../../.././images/./xml/2499/ワイン/ノンアルコールワイン/9.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section8 h1{
+color: #000;
+position: relative;
+}/*CSS_DATAS_MANY1*/
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+		    h1.btn{
+					background-color:  rgba(255,0,0,0.5);
+
+				}
+
+
+	</style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    var num = 2;
+    var i = 0;
+    $(function(){
+      setInterval(function(){
+        i = num % 20;
+        num++;
+        if(i==0){i=20}
+        /**/
+$('#section0').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/ワインセット/' + i + '.png)');
+/**/
+$('#section1').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/赤ワイン/' + i + '.png)');
+/**/
+$('#section2').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/白ワイン/' + i + '.png)');
+/**/
+$('#section3').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/ロゼワイン/' + i + '.png)');
+/**/
+$('#section4').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/シャンパン、スパークリング/' + i + '.png)');
+/**/
+$('#section5').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/フレーバードワイン/' + i + '.png)');
+/**/
+$('#section6').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/シェリー、ポート、酒精強化ワイン/' + i + '.png)');
+/**/
+$('#section7').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/その他ワイン/' + i + '.png)');
+/**/
+$('#section8').css('background-image','url(' + '../../.././images/./xml/2499/ワイン/ノンアルコールワイン/' + i + '.png)');
+/*CSS_DATAS_MANY2*/
+      },3500);
+    });
+  </script>
+</head>
+<body>
+
+
+
+<div id="fullpage">
+  <!----><div class="section " id="section0"><a href="./18108/main.html"><h1 class="btn">ワインセット</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section1"><a href="./1372/main.html"><h1 class="btn">赤ワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section2"><a href="./1373/main.html"><h1 class="btn">白ワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section3"><a href="./1375/main.html"><h1 class="btn">ロゼワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section4"><a href="./18068/main.html"><h1 class="btn">シャンパン、スパークリング</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section5"><a href="./43170/main.html"><h1 class="btn">フレーバードワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section6"><a href="./43171/main.html"><h1 class="btn">シェリー、ポート、酒精強化ワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section7"><a href="./1377/main.html"><h1 class="btn">その他ワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section8"><a href="./18102/main.html"><h1 class="btn">ノンアルコールワイン</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!--CSS_DATAS_MANY3-->
+</div>
+
+
+<script type="text/javascript" src="../../../dist/fullpage.js"></script>
+<script type="text/javascript" src="../../../examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: [/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/*CSS_DATAS_MANY6],*/],
+        anchors: [/**/'firstPage',/**/'secondPage',/**/'3rdPage',/**/'4thPage',/**/'5thPage',/**/'6thPage',/**/'7thPage',/**/'8thPage',/**/'9thPage',/*CSS_DATAS_MANY5*/],
+        navigation:true,
+        navigationTooltips: [/**/'ワインセット',/**/'赤ワイン',/**/'白ワイン',/**/'ロゼワイン',/**/'シャンパン、スパークリング',/**/'フレーバードワイン',/**/'シェリー、ポート、酒精強化ワイン',/**/'その他ワイン',/**/'ノンアルコールワイン',/*CSS_DATAS_MANY4*/],
+        showActiveTooltip: true,
+        menu: '#menu'
+    });
+</script>
+
+</body>
+</html>

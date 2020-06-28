@@ -1,0 +1,70 @@
+.example {/*親div*/
+    position: relative;/*相対配置*/
+    }
+  
+.connect{
+  z-index:998;
+}
+
+  .example a {
+      
+    position: absolute;/*絶対配置*/
+    font-weight: bold; /*太字に*/
+    font-size: 2em;/*サイズ2倍*/
+    font-family :Quicksand, sans-serif;/*Google Font*/
+    /*文字を真ん中に配置*/
+  
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+  
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    /*
+    width: 430px;
+    height: 430px;*/
+    
+    line-height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .6s;
+    }
+    
+  .up {
+    z-index: 40;
+    width: 430px;
+    height: 430px;
+
+    margin-top: 100px;
+  }
+
+#only{
+z-index: 0;
+position: absolute;/*絶対配置*/
+font-weight: bold; /*太字に*/
+font-size: 2em;/*サイズ2倍*/
+font-family :Quicksand, sans-serif;/*Google Font*/
+/*文字を真ん中に配置*/
+
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+
+display: inline-block;
+text-decoration: none;
+color: #ffffff;
+width: 430px;
+height: 430px;
+line-height: 400px;
+text-align: center;
+vertical-align: middle;
+overflow: hidden;
+transition: .6s;
+}
+
+  .example > img {
+    width: 100%;
+  
+    }

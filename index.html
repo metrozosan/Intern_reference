@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--slideのやつ-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Navigation tooltips - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="./dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!--waveのやつ-->
+    <link rel="stylesheet" type="text/css" href="./css/wave.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!--メニューバーのやつ-->
+    <link rel="stylesheet" type="text/css" href="./css/menubar.css">
+    <script>
+          $(function(){
+              $('#nav li').hover(function(){
+                  $("ul:not(:animated)", this).slideDown();
+              }, function(){
+                  $("ul.child",this).slideUp();
+              });
+          });
+
+          $(function(){
+              $('#header ul li').hover(function(){
+                  $("li:not(:animated)", this).slideDown();
+              }, function(){
+                  $("header.cb-header",this).slideUp();
+              });
+          });
+    </script>
+
+    <!--電話のやつ-->
+    <link rel="stylesheet" type="text/css" href="./css/phone.css">
+
+    <!--画像の横scrollのやつ-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/infiniteslidev2.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('.infiniteslide').infiniteslide({
+          'speed': 100, //速さ　単位はpx/秒です。
+          'direction': 'left', //up/down/left/rightから選択
+          'pauseonhover': true, //マウスオーバーでストップ
+          'responsive': false, //子要素の幅を%で指定しているとき
+          'clone': 2 //子要素の複製回数
+        });
+      });
+      $('.coment').hover({
+          'speed': 200, //速さ　単位はpx/秒です。
+          'direction': 'left', //up/down/left/rightから選択
+          'responsive': false, //子要素の幅を%で指定しているとき
+          'clone': 2 //子要素の複製回数
+        });
+    </script>
+</head>
+<body>
+
+<header class="cb-header"><ul id="nav">
+  <li><a href="index.html">ホーム</a></li>
+  <li><a href="./tag.html">通話</a></li>
+  <li><a href="#">お酒のカテゴリー  </a>
+  <ul class=child>
+    <!---
+    <li><a href="./htmls/2499/17583/main.html">炭酸水</a></li>
+    <li><a href="./htmls/2499/1371/main.html">ワイン</a></li>
+    <li><a href="./htmls/2499/1348/main.html">焼酎</a></li>
+    <li><a href="./htmls/2499/1359/main.html">日本酒</a></li>
+    <li><a href="./htmls/2499/15152/main.html">ビール、発泡酒</a></li>
+    <li><a href="./htmls/2499/18161/main.html">ハイボール、チューハイ</a></li>
+    <li><a href="./htmls/2499/18176/main.html">カクテル</a></li>
+    <li><a href="./htmls/2499/4746/main.html">洋酒</a></li>
+    <li><a href="./htmls/2499/41170/main.html">リキュール</a></li>
+    <li><a href="./htmls/2499/18377/main.html">梅酒</a></li>
+    <li><a href="./htmls/2499/18383/main.html">中国酒、紹興酒</a></li>
+    <li><a href="./htmls/2499/18389/main.html">韓国酒、マッコリ</a></li>-->
+    <div class="bolt">
+    <span><a href="./htmls/2499/17583/main.html">炭酸水</a></span>
+    <span><a href="./htmls/2499/1371/main.html">ワイン</a></span>
+    <span><a href="./htmls/2499/1348/main.html">焼酎</a></span>
+    <span><a href="./htmls/2499/1359/main.html">日本酒</a></span>
+    </div>
+    <div class="sarada">
+    <span><a href="./htmls/2499/15152/main.html">ビール、発泡酒</a></span>
+    <span><a href="./htmls/2499/18161/main.html">ハイボール、チューハイ</a></span>
+    <span><a href="./htmls/2499/18176/main.html">カクテル</a></span>
+    <span><a href="./htmls/2499/4746/main.html">洋酒</a></span>
+    </div>
+    <div class="sasuke">
+    <span><a href="./htmls/2499/41170/main.html">リキュール</a></span>
+    <span><a href="./htmls/2499/18377/main.html">梅酒</a></span>
+    <span><a href="./htmls/2499/18383/main.html">中国酒、紹興酒</a></span>
+    <span><a href="./htmls/2499/18389/main.html">韓国酒、マッコリ</a></span>
+    </div>
+  </ul>
+  <li>   
+  <!-- Begin Yahoo! JAPAN Web Services Attribution Snippet -->
+  <a href="https://developer.yahoo.co.jp/about">
+  <img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a>
+  <!-- End Yahoo! JAPAN Web Services Attribution Snippet -->
+  </li>
+</ul></header>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div id="title">
+          <p><img src="./images/title.png"></p>
+          <div id="canvas-wrap">
+            <canvas id="sineCanvas" width="100%" height="auto"></canvas>
+          </div>
+          <script type="text/javascript" src="./js/wave.js"></script>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class="example">
+        <img src="./images/background2.png">
+        <img id="only"src="./images/internet_earth_only.png"  />
+       <a href="tag.html" onmouseover="mouseOn();" onmouseout="mouseOff();">
+           <span class="up">仲間と繋がろう！</span>
+         </a>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <!----><div class=coment>お酒を調べよう！！</div>
+        <div class="infiniteslide">
+          <ul>
+            <a href="./htmls/2499/18171/main.html">
+              <img src="./images/1.png" alt=""/>
+            </a>
+            <a href="./htmls/2499/18161/main.html">
+              <img src="./images/2.png" alt=""/>
+            </a>
+            <a href="./htmls/2499/15152/main.html">
+              <img src="./images/3.png" alt=""/>
+            </a>
+            <a href="./htmls/2499/41170/main.html">
+            <img src="./images/4.png" alt="" />
+            </a>
+            <a href="./htmls/2499/1371/main.html">
+            <img src="./images/5.png" alt="" />
+            </a>
+            <a href="./htmls/2499/18377/main.html">
+            <img src="./images/6.png" alt="" />
+            </a>
+            <a href="./htmls/2499/18389/main.html">
+            <img src="./images/7.png" alt="" />
+            </a>
+            <a href="./htmls/2499/17583/main.html">
+            <img src="./images/8.png" alt="" />
+            </a>
+            <a href="./htmls/2499/17583/main.html">
+            <img src="./images/9.png" alt="" />
+            </a>
+            <a href="./htmls/2499/18383/main.html">
+            <img src="./images/10.png" alt="" />
+            </a>
+            <a href="./htmls/2499/1359/main.html">
+            <img src="./images/11.png" alt="" />
+            </a>
+            <a href="./htmls/2499/41170/main.html">
+            <img src="./images/12.png" alt="" />
+            </a>
+          </ul>
+          </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#FFFFFF', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        navigation:true,
+        navigationTooltips: ['Title', 'CALL', 'CATEGORY'],
+        showActiveTooltip: true,
+        menu: '#menu'
+    });
+</script>
+
+</body>
+</html>

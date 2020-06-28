@@ -1,0 +1,128 @@
+/***********メニューバー************/
+header {
+    background-color: rgb(0, 0, 0);
+    line-height: 100%;
+    text-align: center;
+    width: 100%;
+
+    margin-top: -45px;
+    z-index:9998;
+  }
+  header:hover {
+    margin-top: 0px;
+  }
+  .cb-header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index:9998;
+  }
+
+  #nav {
+    list-style: none;
+    overflow: hidden;
+  }
+  #nav > li {
+    width: 250px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+  
+    float: left;
+    height: 70px;
+    line-height: 70px;  /*文字の高さ*/
+    margin-right: 2px;
+  }
+  #nav > li > a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+
+    padding: 50px 100px 50px 100px; /*選択範囲指定*/
+  }
+  #nav > li{
+    margin-top: 3px;
+  }
+  .child{
+    list-style: none;
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    padding: 0;
+  
+
+  }
+  .child > div>span > a{
+    padding: 20px 100px 20px 100px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+    */
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: black;
+  }
+  .child > div > bolt > span > a{
+    padding: 50px 200px 50px 200px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+    */
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: black;
+  }
+  .child > div > sarada > span > a{
+    padding: 50px 200px 50px 200px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+    */
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: black;
+  }
+  .child > div > sasuke > span > a{
+    padding: 50px 200px 50px 200px;
+    /*
+    margin-left: 5px;
+    margin-right: 5px;
+    */
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: black;
+  }
+  
+  .child > div > span > li > a:hover{
+    background: #8b8b83;
+  }
+  
+  #nav > li > a:hover{
+    background: #8b8b8b;
+  }
+  
+  .bolt > span > a{
+    position: absolute;
+    left: -200px;
+    top: -20px;
+    margin: 20px 80px 20px 80px;
+    padding:  20px 80px 20px 80px;
+  }
+  .sarada > span > a{
+    position: absolute;
+    left: 100px;
+    top: -20px;
+    margin: 20px 80px 20px 80px;
+    padding:  20px 80px 20px 80px;
+  }
+  .sasuke > span > a{
+    position: absolute;
+    left: 400px;
+    top: -20px;
+    margin: 20px 80px 20px 80px;
+    padding:  20px 80px 20px 80px;
+  }

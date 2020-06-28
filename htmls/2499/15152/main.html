@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background images - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../../../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../../../examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #000;
+		margin:0;
+		padding:0;
+    position: center;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+  /**/
+#section0{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/ビールセット/1.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section0 h1{
+color: #000;
+position: relative;
+}/**/
+#section1{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/国産ビール/2.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section1 h1{
+color: #000;
+position: relative;
+}/**/
+#section2{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/発泡酒、新ジャンル/3.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section2 h1{
+color: #000;
+position: relative;
+}/**/
+#section3{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/地ビール/4.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section3 h1{
+color: #000;
+position: relative;
+}/**/
+#section4{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/輸入ビール/5.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section4 h1{
+color: #000;
+position: relative;
+}/**/
+#section5{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/その他ビール、発泡酒/6.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section5 h1{
+color: #000;
+position: relative;
+}/**/
+#section6{
+background-image: url(../../.././images/./xml/2499/ビール、発泡酒/ノンアルコールビール/7.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section6 h1{
+color: #000;
+position: relative;
+}/*CSS_DATAS_MANY1*/
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+		    h1.btn{
+					background-color:  rgba(255,0,0,0.5);
+
+				}
+
+
+	</style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    var num = 2;
+    var i = 0;
+    $(function(){
+      setInterval(function(){
+        i = num % 20;
+        num++;
+        if(i==0){i=20}
+        /**/
+$('#section0').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/ビールセット/' + i + '.png)');
+/**/
+$('#section1').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/国産ビール/' + i + '.png)');
+/**/
+$('#section2').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/発泡酒、新ジャンル/' + i + '.png)');
+/**/
+$('#section3').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/地ビール/' + i + '.png)');
+/**/
+$('#section4').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/輸入ビール/' + i + '.png)');
+/**/
+$('#section5').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/その他ビール、発泡酒/' + i + '.png)');
+/**/
+$('#section6').css('background-image','url(' + '../../.././images/./xml/2499/ビール、発泡酒/ノンアルコールビール/' + i + '.png)');
+/*CSS_DATAS_MANY2*/
+      },3500);
+    });
+  </script>
+</head>
+<body>
+
+
+
+<div id="fullpage">
+  <!----><div class="section " id="section0"><a href="./18160/main.html"><h1 class="btn">ビールセット</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section1"><a href="./18113/main.html"><h1 class="btn">国産ビール</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section2"><a href="./18144/main.html"><h1 class="btn">発泡酒、新ジャンル</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section3"><a href="./18120/main.html"><h1 class="btn">地ビール</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section4"><a href="./18130/main.html"><h1 class="btn">輸入ビール</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section5"><a href="./15158/main.html"><h1 class="btn">その他ビール、発泡酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section6"><a href="./18158/main.html"><h1 class="btn">ノンアルコールビール</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!--CSS_DATAS_MANY3-->
+</div>
+
+
+<script type="text/javascript" src="../../../dist/fullpage.js"></script>
+<script type="text/javascript" src="../../../examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: [/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/*CSS_DATAS_MANY6],*/],
+        anchors: [/**/'firstPage',/**/'secondPage',/**/'3rdPage',/**/'4thPage',/**/'5thPage',/**/'6thPage',/**/'7thPage',/*CSS_DATAS_MANY5*/],
+        navigation:true,
+        navigationTooltips: [/**/'ビールセット',/**/'国産ビール',/**/'発泡酒、新ジャンル',/**/'地ビール',/**/'輸入ビール',/**/'その他ビール、発泡酒',/**/'ノンアルコールビール',/*CSS_DATAS_MANY4*/],
+        showActiveTooltip: true,
+        menu: '#menu'
+    });
+</script>
+
+</body>
+</html>

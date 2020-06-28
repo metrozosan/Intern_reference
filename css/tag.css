@@ -1,0 +1,106 @@
+ul.image_list li {
+    /* liが横並びになるようにします。 */
+    display: inline-block;
+  }
+  ul.image_list li .image_box {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    /* チェックボックスの親要素にrelativeを指定しておきます。 */
+    position: relative;
+  }
+  .image_box img.thumbnail {
+    width: 100%;
+    height: 100%;
+    /* 画像にカーソルを合わせたときに、
+    カーソルが指のマークになるようにします。 */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .image_box img.thumbnail {
+    /* チェックが入った状態だと、枠が表示されるようにします。 */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    /* 線をwidthとheightに含めるようにします。 */
+    box-sizing: border-box;
+  }
+
+  .image_box img.thumbnail.checked{
+    /* チェックが入った状態だと、枠が表示されるようにします。 */
+    border: 5px solid rgb(250, 183, 0);
+    border-radius: 50%;
+    /* 線をwidthとheightに含めるようにします。 */
+    box-sizing: border-box;
+  }
+  .image_box img.thumbnail:hover{
+
+    opacity: 0.4;
+  }
+  .image_box .disabled_checkbox{
+    /* チェックボックスの位置は絶対位置にします。 */
+    position: absolute;
+    /* チェック前は非表示にしておきます。 */
+    display: none;
+    /* チェックボックスにカーソルを合わせたときに、
+    カーソルが指のマークになるようにします。 */
+    cursor: pointer;
+    
+  }
+  
+.iamge_box img{
+    border-radius: 50%;
+}
+
+div{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+image_box img.thumbnail.checked{
+  background-color: rgb(0, 0, 0); /* カラーフィルタ効果の色を指定 */
+}
+/**ボタン**/
+.next_btn{
+  display: inline-block;
+  padding: 1.5em 2.0em;
+  margin-top: -10%;
+  text-decoration: none;
+  background: #ffbb02;/*ボタン色*/
+  color: #ffffff;/*ボタン色と同じに*/
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #627295;
+  border-radius: 3px;/*角の丸み*/
+  font-size: 18px;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+}
+.shre{
+  color: rgb(202, 202, 202);
+  background-image: -webkit-linear-gradient(#a7a7a7 0%, #747474 100%);
+  background-image: linear-gradient(#d4d4d4 0%, #646464 100%);
+}
+.next_btn:active{
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+div.next{
+  text-align: right;
+  margin-top: -40px;
+  margin-left: 60px;
+  margin-right: 0px;
+}
+
+div.chose{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.0em;
+}
+
+up{
+  margin-top: -100px;
+  width: 100px;
+  height: 50px;
+}

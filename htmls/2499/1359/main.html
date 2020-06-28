@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background images - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../../../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="../../../examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #000;
+		margin:0;
+		padding:0;
+    position: center;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+  /**/
+#section0{
+background-image: url(../../.././images/./xml/2499/日本酒/日本酒セット/1.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section0 h1{
+color: #000;
+position: relative;
+}/**/
+#section1{
+background-image: url(../../.././images/./xml/2499/日本酒/純米大吟醸酒/2.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section1 h1{
+color: #000;
+position: relative;
+}/**/
+#section2{
+background-image: url(../../.././images/./xml/2499/日本酒/大吟醸酒/3.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section2 h1{
+color: #000;
+position: relative;
+}/**/
+#section3{
+background-image: url(../../.././images/./xml/2499/日本酒/純米吟醸酒/4.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section3 h1{
+color: #000;
+position: relative;
+}/**/
+#section4{
+background-image: url(../../.././images/./xml/2499/日本酒/吟醸酒/5.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section4 h1{
+color: #000;
+position: relative;
+}/**/
+#section5{
+background-image: url(../../.././images/./xml/2499/日本酒/特別純米酒/6.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section5 h1{
+color: #000;
+position: relative;
+}/**/
+#section6{
+background-image: url(../../.././images/./xml/2499/日本酒/純米酒/7.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section6 h1{
+color: #000;
+position: relative;
+}/**/
+#section7{
+background-image: url(../../.././images/./xml/2499/日本酒/特別本醸造酒/8.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section7 h1{
+color: #000;
+position: relative;
+}/**/
+#section8{
+background-image: url(../../.././images/./xml/2499/日本酒/本醸造酒/9.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section8 h1{
+color: #000;
+position: relative;
+}/**/
+#section9{
+background-image: url(../../.././images/./xml/2499/日本酒/普通酒/10.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section9 h1{
+color: #000;
+position: relative;
+}/**/
+#section10{
+background-image: url(../../.././images/./xml/2499/日本酒/どぶろく/11.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section10 h1{
+color: #000;
+position: relative;
+}/**/
+#section11{
+background-image: url(../../.././images/./xml/2499/日本酒/その他日本酒/12.png);
+padding: 6% 0 0 0;
+background-size:50% 50%;}
+#section11 h1{
+color: #000;
+position: relative;
+}/*CSS_DATAS_MANY1*/
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+		    h1.btn{
+					background-color:  rgba(255,0,0,0.5);
+
+				}
+
+
+	</style>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    var num = 2;
+    var i = 0;
+    $(function(){
+      setInterval(function(){
+        i = num % 20;
+        num++;
+        if(i==0){i=20}
+        /**/
+$('#section0').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/日本酒セット/' + i + '.png)');
+/**/
+$('#section1').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/純米大吟醸酒/' + i + '.png)');
+/**/
+$('#section2').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/大吟醸酒/' + i + '.png)');
+/**/
+$('#section3').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/純米吟醸酒/' + i + '.png)');
+/**/
+$('#section4').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/吟醸酒/' + i + '.png)');
+/**/
+$('#section5').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/特別純米酒/' + i + '.png)');
+/**/
+$('#section6').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/純米酒/' + i + '.png)');
+/**/
+$('#section7').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/特別本醸造酒/' + i + '.png)');
+/**/
+$('#section8').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/本醸造酒/' + i + '.png)');
+/**/
+$('#section9').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/普通酒/' + i + '.png)');
+/**/
+$('#section10').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/どぶろく/' + i + '.png)');
+/**/
+$('#section11').css('background-image','url(' + '../../.././images/./xml/2499/日本酒/その他日本酒/' + i + '.png)');
+/*CSS_DATAS_MANY2*/
+      },3500);
+    });
+  </script>
+</head>
+<body>
+
+
+
+<div id="fullpage">
+  <!----><div class="section " id="section0"><a href="./17662/main.html"><h1 class="btn">日本酒セット</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section1"><a href="./1363/main.html"><h1 class="btn">純米大吟醸酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section2"><a href="./1364/main.html"><h1 class="btn">大吟醸酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section3"><a href="./1361/main.html"><h1 class="btn">純米吟醸酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section4"><a href="./1360/main.html"><h1 class="btn">吟醸酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section5"><a href="./17655/main.html"><h1 class="btn">特別純米酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section6"><a href="./1362/main.html"><h1 class="btn">純米酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section7"><a href="./17654/main.html"><h1 class="btn">特別本醸造酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section8"><a href="./1365/main.html"><h1 class="btn">本醸造酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section9"><a href="./17660/main.html"><h1 class="btn">普通酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section10"><a href="./17656/main.html"><h1 class="btn">どぶろく</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!----><div class="section " id="section11"><a href="./1366/main.html"><h1 class="btn">その他日本酒</h1></a><a href="https://developer.yahoo.co.jp/about"><img src="https://s.yimg.jp/images/yjdn/yjdn_attbtn2_105_17.gif" width="105" height="17" title="Webサービス by Yahoo! JAPAN" alt="Webサービス by Yahoo! JAPAN" border="0" style="margin:15px 15px 15px 15px"></a></div><!--CSS_DATAS_MANY3-->
+</div>
+
+
+<script type="text/javascript" src="../../../dist/fullpage.js"></script>
+<script type="text/javascript" src="../../../examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: [/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/**/'#FFFFFF',/*CSS_DATAS_MANY6],*/],
+        anchors: [/**/'firstPage',/**/'secondPage',/**/'3rdPage',/**/'4thPage',/**/'5thPage',/**/'6thPage',/**/'7thPage',/**/'8thPage',/**/'9thPage',/**/'10thPage',/**/'11thPage',/**/'12thPage',/*CSS_DATAS_MANY5*/],
+        navigation:true,
+        navigationTooltips: [/**/'日本酒セット',/**/'純米大吟醸酒',/**/'大吟醸酒',/**/'純米吟醸酒',/**/'吟醸酒',/**/'特別純米酒',/**/'純米酒',/**/'特別本醸造酒',/**/'本醸造酒',/**/'普通酒',/**/'どぶろく',/**/'その他日本酒',/*CSS_DATAS_MANY4*/],
+        showActiveTooltip: true,
+        menu: '#menu'
+    });
+</script>
+
+</body>
+</html>
